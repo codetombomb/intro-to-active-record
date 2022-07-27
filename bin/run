@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require_relative "../config/environment"
+
+# run init method or other entry point code here
