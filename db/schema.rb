@@ -13,7 +13,7 @@
 ActiveRecord::Schema[7.0].define(version: 2022_07_27_171049) do
   create_table "donations", force: :cascade do |t|
     t.float "amount"
-    t.datetime "datetime"
+    t.datetime "date"
     t.boolean "completed", default: false
     t.integer "organization_id"
     t.integer "donor_id"
