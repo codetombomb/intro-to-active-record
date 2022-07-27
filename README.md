@@ -68,13 +68,6 @@ Bundler.require(:default, ENV["RACK_ENV"])
 require_all "app"
 ```
 
-1. Link model to Active Record by using 'class inheritance'. This will inherit all the methods defined in the Active Record Base library and allow the class to utilize them. Create a file `application_record.rb` and add the following code:
-
-```ruby
-class ApplicationRecord < ActiveRecord::Base
-end
-```
-
 Conventionally, there will be an `ApplicationRecord` class that is responsible for establishing the connection with Active Record Base and all subsequent classes will then inherit from `ApplicationRecord`. This will keep code DRY.
 
 # **Rake**
